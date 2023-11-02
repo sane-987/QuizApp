@@ -20,4 +20,4 @@ Tables required :
 ##### UserScore(id int primary key auto_increment, testid int foreign key references Tests(testid), username varchar(20), score int);
 
 
-##Setting Up Fronend:
+## Setting Up Fronend:
