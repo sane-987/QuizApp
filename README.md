@@ -4,6 +4,7 @@ The repository has two seperate workspaces for backend and frontend
 
 
 ##Setting Up Backend Requisite:
+#### The backend is built using NodeJs, MySQL, Sequelize ORM
 You can setup backend workspace using the following command
 npm i -y
 This will install the required packages for the project.
@@ -24,23 +25,35 @@ Sequelize has been used as ORM for database modelling.
 We can use sequelize-auto for generating DB table models
 
 #### Install sequeliz-auto : npm i -g sequelize-auto
-For generating models : you can refer the ![sequelize-auto](https://github.com/sequelize/sequelize-auto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+For generating models : you can refer the ![sequelize-auto](https://github.com/sequelize/sequelize-auto) github link
 
 
 
 
 ## Setting Up Fronend:
+The Frontend is built using ReactJs.
+
+You can setup the frontend workspace locally using the following command : 
+npm i -y
+This will get installed required packages.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
