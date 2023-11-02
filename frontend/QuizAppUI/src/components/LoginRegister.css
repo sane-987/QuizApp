@@ -1,0 +1,49 @@
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.logindiv,.registerdiv {
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    height : 500px;
+    margin : 10px;
+    border-radius : 1rem;
+    padding : 2rem 2rem;
+    background-color: grey;
+    width : 400px;
+    
+}
+
+.loginform,.registerform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginform input {
+    margin : .5rem;
+    padding : .5rem 2rem;
+    border-radius: .3rem;
+}
+.logindiv p a {
+    color : inherit;
+}
+
+
+
+.registerform input {
+    margin : .5rem;
+    padding : .5rem 2rem;
+    border-radius: .3rem;
+}
+
+
+.registerdiv p a {
+    color : inherit;
+}

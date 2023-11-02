@@ -1,0 +1,87 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: rgb(225, 225, 168);
+}
+.quizName {
+    margin : 2rem;
+}
+.quizElement{
+    background-color: grey;
+    border-radius : 4px;
+    margin : 10px;
+    padding : 5px 30rem 5px 5px;
+    width : 100%;
+    
+}
+.quizElement .options .option {
+    list-style-type: none;
+    cursor : pointer;
+    padding : 2px;
+    margin : .5rem;
+}
+
+.quizElement .options .option:hover {
+    background-color:white;
+    border-radius: 2px;
+}
+
+/* 
+.quizElement ul li .active {
+    background-color:white;
+    border-radius: 1px;
+}
+ */
+.quizElement .options .active {
+    background-color:white;
+    border-radius: 1px;
+}
+
+ button {
+    margin : 2rem;
+}
+
+@media screen  and (max-width : 468px){
+    .quizName h1{
+        font-size: 2rem;
+    }
+    .quizElement {
+        width : 80%;
+        padding : 5px;
+    }
+}
+
+
+
+/* admin stuff css*/
+
+.quizElementAdmin{
+    background-color: grey;
+    border-radius : 4px;
+    margin : 10px;
+    padding : 5px 30rem 5px 5px;
+    width : 100%;
+    
+}
+.quizElementAdmin h3 input {
+    padding : 5px;
+    margin : .1rem;
+    height: 2rem;
+    width : 40rem;
+    border-radius: 4px;
+}
+.quizElementAdmin .options {
+    list-style-type: none;
+}
+.quizElementAdmin .options .optionAdmin {
+    list-style-type: none;
+    padding : 5px;
+    margin : .5rem;
+    height : 2rem;
+    border-radius: 4px;
+    width : 100%;
+}
