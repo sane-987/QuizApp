@@ -3,13 +3,13 @@ Mutli Language QuizApp
 The repository has two seperate workspaces for backend and frontend
 
 
-##Setting Up Backend Requisite:
+## Setting Up Backend Requisite:
 #### The backend is built using NodeJs, MySQL, Sequelize ORM
 You can setup backend workspace using the following command
 npm i -y
 This will install the required packages for the project.
 
-###Setting up the MySQL database:
+### Setting up the MySQL database:
 You should have mysql installed locally on your system..
 
 Tables required : 
