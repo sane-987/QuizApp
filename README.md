@@ -24,6 +24,13 @@ Tables required :
 Sequelize has been used as ORM for database modelling.
 We can use sequelize-auto for generating DB table models
 
+### Setting up .env file:
+MYSQL_HOST = "host_name"
+MYSQL_PORT = "port number"
+MYSQL_USER = "your mysqluser"
+MYSQL_PASSWORD = "your mysqlpassword"
+MYSQL_DB = "QuizApp"
+
 #### Install sequeliz-auto : npm i -g sequelize-auto
 For generating models : you can refer the ![sequelize-auto](https://github.com/sequelize/sequelize-auto) github link
 
