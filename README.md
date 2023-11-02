@@ -12,7 +12,7 @@ This will install the required packages for the project.
 You should have mysql installed locally on your system..
 
 Tables required : 
-### Database Name : QuizApp
+### Database Name : QuizApp(create database QuizApp)
 #### Table Names : 
 ##### users(id int primary key auto_increment, email varchar(20), username varchar(20), password varchar(255));
 ##### Tests(testid int primary key, testtype enum('marathi', 'english', 'hindi', testscore int);
