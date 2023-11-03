@@ -16,7 +16,7 @@ router.post("/dashboard", (req, res) => {
 router.post("/login", async(req, res, next) => {
     console.log(req.body.email)
     const user = await model.users.findOne({where : {email : req.body.email}})
-    //console.log(user)
+    console.log(user["role"])
     if(user){
         const password_valid = await bcrypt.compare(req.body.password, user.password)
         if(password_valid)
@@ -25,12 +25,14 @@ router.post("/login", async(req, res, next) => {
                 if(user["role"] === "user") {
                     res.status(200).json({
                         message : "login successful",
+                        role : user["role"]
                         //token : accessToken
                     })
                 }
                 else {
                     res.status(200).json({
                         message : "admin login",
+                        role : user["role"]
                         //token : accessToken
                     })
                 }

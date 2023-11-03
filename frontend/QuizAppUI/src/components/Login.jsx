@@ -25,6 +25,7 @@ const Login = () => {
         setStatus("Login Successful")
         localStorage.setItem("authenticated", true)
         localStorage.setItem("userId", userLog)
+        localStorage.setItem("userRole" , response.data.role)
         navigate("/adminPortal", {
           state : {
             role : "admin"
@@ -35,6 +36,7 @@ const Login = () => {
         setStatus("Login Successful")
         localStorage.setItem("authenticated", true)
         localStorage.setItem("userId", userLog)
+        localStorage.setItem("userRole" , response.data.role)
         navigate("/quizMenu", {
           state : {
             role : "user"

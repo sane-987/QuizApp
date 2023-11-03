@@ -15,11 +15,8 @@ const Quiz = () => {
         
         quizdata()
         .then((result) => {
-            if (result.length == 0)
-            {
-
-            }
             setquizData(result)
+            console.log(result)
         })
     }, [])
 
@@ -37,11 +34,12 @@ const Quiz = () => {
         console.log(e.target[10].checked, e.target[10].value)
 
         let arr = []
-        
+        console.log(e.target.elements)
         for (let ele in e.target){
             if (e.target[ele].type === "radio"){
                 if (e.target[ele].checked)
-                    arr.push(e.target[ele].value)        
+                    arr.push(e.target[ele].value)
+
             }
             else
                 break
@@ -53,6 +51,9 @@ const Quiz = () => {
             userChoices : arr
         })
         console.log(response.data.score)
+        const totalnoOfQuestions = quizData.length
+        const noOfQuestionsAttended = arr
+        console.log(arr, totalnoOfQuestions)
         alert(`You Scored ${response.data.score}/50`)
         // for(let ele in e.target) {
         //     if (e.target[ele] === true) {
@@ -75,8 +76,8 @@ const Quiz = () => {
                     return <QuizElement key = {quizData[_]["quizid"]} id = {index+1} question = {quizData[_]["question"]} choices = {quizData[_]["choices"]}/>
                 })
             }
-            <button type='submit'>Grade Me</button> 
-        </form>
+                    <button type='submit'>Grade Me</button> 
+                </form>
             ) : (
                 <h3> No Questions for this test yet!! Contact Admin Please</h3>
             )

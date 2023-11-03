@@ -20,6 +20,7 @@ const AdminPortal = () => {
     }
   return (
     <>
+    
     <h1>Welcome Admin</h1>
     <h2>Select Quiz to add up questions</h2>
     <form action="" onSubmit = {handleSubmit} className='quizElement'>
